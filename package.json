@@ -1,0 +1,7 @@
+{
+  "name": "yared-portfolio-deploy",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix yared-portfolio install && npm --prefix yared-portfolio run build && node -e \"const fs=require('fs');fs.rmSync('dist',{recursive:true,force:true});fs.cpSync('yared-portfolio/dist','dist',{recursive:true});\""
+  }
+}
