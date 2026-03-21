@@ -1,21 +1,12 @@
 {
-  "version": 2,
-  "builds": [
+  "framework": "vite",
+  "installCommand": "cd yared-portfolio && npm install",
+  "buildCommand": "cd yared-portfolio && npm run build",
+  "outputDirectory": "yared-portfolio/dist",
+  "rewrites": [
     {
-      "src": "yared-portfolio/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
