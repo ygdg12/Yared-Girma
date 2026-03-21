@@ -1,7 +1,7 @@
 {
   "framework": "vite",
-  "installCommand": "cd yared-portfolio && npm install",
-  "buildCommand": "cd yared-portfolio && npm run build",
+  "installCommand": "npm --prefix yared-portfolio install",
+  "buildCommand": "npm --prefix yared-portfolio run build",
   "outputDirectory": "yared-portfolio/dist",
   "rewrites": [
     {
