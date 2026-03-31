@@ -71,7 +71,7 @@ export default function About() {
 
           <div className={`${styles.body} reveal reveal-delay-2`} ref={el => r(el, 7)}>
             <p>
-              I'm Yared a backend-focused developer based in Addis Ababa. I build clean, scalable APIs and full-stack systems that actually work in the real world.
+              I'm Yared a Full-Stack developer based in Addis Ababa. I build clean, scalable APIs and full-stack systems that actually work in the real world.
             </p>
             <p>
               My stack is centered around <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>, with React on the frontend when needed. I love the process of turning messy requirements into elegant, maintainable code.
