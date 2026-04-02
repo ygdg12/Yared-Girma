@@ -24,7 +24,7 @@ export default function Hero() {
 
   // Animated year counter
   useEffect(() => {
-
+    const el = yearRef.current;
     if (!el) return;
     let start = 2020;
     const end = new Date().getFullYear();
