@@ -4,7 +4,7 @@ import styles from './Projects.module.css';
 const PROJECTS = [
   {
     id: '01',
-    title: 'Las Vegas Restaurant',
+    title: 'Las Vegas Seven',
     subtitle: 'Italian Restaurant',
     desc: 'A modern website for an Italian ristorante & pizzeria with a clean layout and fast navigation.',
     tags: ['React', 'Vite', 'UI'],
@@ -58,7 +58,7 @@ const PROJECTS = [
     subtitle: 'olmenilotica.com',
     desc: 'A premium online presence for Olmenilotica.',
     tags: ['Web', 'Design', 'Deployment'],
-    url: 'olmenilotica.com',
+    url: 'https://olmenilotica.com',
     year: '2026',
     type: 'Live Website',
   },

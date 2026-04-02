@@ -6,7 +6,6 @@ import { LocationPinIcon, LightningBoltIcon, LinkIcon } from './PremiumIcons';
 export default function Hero() {
   const containerRef = useRef(null);
   const photoRef = useRef(null);
-  const yearRef = useRef(null);
 
   useEffect(() => {
     // Parallax on photo
@@ -20,27 +19,6 @@ export default function Hero() {
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
-  // Animated year counter
-  useEffect(() => {
-    
-    if (!el) return;
-    let start = 2020;
-    const end = new Date().getFullYear();
-    const duration = 1500;
-    const step = (end - start) / (duration / 16);
-    let current = start;
-    const timer = setInterval(() => {
-      current += step;
-      if (current >= end) {
-        el.textContent = end;
-        clearInterval(timer);
-      } else {
-        el.textContent = Math.floor(current);
-      }
-    }, 16);
-    return () => clearInterval(timer);
   }, []);
 
   return (
@@ -100,7 +78,7 @@ export default function Hero() {
           {/* Stats row */}
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNum} >2024</span>
+              <span className={styles.statNum}>2024</span>
               <span className={styles.statLabel}>Since</span>
             </div>
             <div className={styles.statDivider} />
