@@ -4,7 +4,7 @@ import styles from './Projects.module.css';
 const PROJECTS = [
   {
     id: '01',
-    title: 'Las Vegas Seven',
+    title: 'Las Vegas Restaurant',
     subtitle: 'Italian Restaurant',
     desc: 'A modern website for an Italian ristorante & pizzeria with a clean layout and fast navigation.',
     tags: ['React', 'Vite', 'UI'],
