@@ -24,7 +24,7 @@ export default function Hero() {
 
   // Animated year counter
   useEffect(() => {
-    const el = yearRef.current;
+    
     if (!el) return;
     let start = 2020;
     const end = new Date().getFullYear();
@@ -100,7 +100,7 @@ export default function Hero() {
           {/* Stats row */}
           <div className={styles.stats}>
             <div className={styles.stat}>
-              <span className={styles.statNum} ref={yearRef}>2024</span>
+              <span className={styles.statNum} >2024</span>
               <span className={styles.statLabel}>Since</span>
             </div>
             <div className={styles.statDivider} />
