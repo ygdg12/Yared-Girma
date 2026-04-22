@@ -8,6 +8,7 @@ const EMAIL = 'yaredgirmab1234@gmail.com';
 const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
 const TELEGRAM_URL = 'https://t.me/yaredll';
 const WHATSAPP_URL = 'https://wa.me/251980256702';
+const CV_DOWNLOAD_URL = '/Yared%20girma.pdf';
 
 const HIGHLIGHTS = [
   { icon: <EducationCapIcon />, label: 'Education', value: 'BSc Information Systems', sub: 'Wolaita sodo University, 2021' },
@@ -122,6 +123,19 @@ export default function About() {
               data-cursor="WHATSAPP"
             >
               <WhatsappIcon /> +251980256702
+            </a>
+            <a
+              href={CV_DOWNLOAD_URL}
+              className={styles.link}
+              data-cursor="DOWNLOAD-CV"
+              download="Yared_Girma_CV.pdf"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M12 3v12" />
+                <path d="M8 11l4 4 4-4" />
+                <path d="M4 19h16" />
+              </svg>
+              Download My CV
             </a>
           </div>
         </div>
