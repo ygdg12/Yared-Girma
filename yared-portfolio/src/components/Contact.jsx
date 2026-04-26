@@ -3,8 +3,8 @@ import styles from './Contact.module.css';
 import { TelegramIcon, WhatsappIcon } from './PremiumIcons';
 
 const EMAIL = 'yaredgirma.webdev@outlook.com';
-// Outlook compose page (ready to send).
-const EMAIL_COMPOSE_URL = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(EMAIL)}`;
+// Gmail compose page (ready to send).
+const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
 
 export default function Contact() {
   const revealRefs = useRef([]);

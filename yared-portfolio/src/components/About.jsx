@@ -4,8 +4,8 @@ import styles from './About.module.css';
 import { EducationCapIcon, LocationPinIcon, BriefcaseIcon, LightningBoltIcon, TelegramIcon, WhatsappIcon } from './PremiumIcons';
 
 const EMAIL = 'yaredgirma.webdev@outlook.com';
-// Outlook compose page (ready to send).
-const EMAIL_COMPOSE_URL = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(EMAIL)}`;
+// Gmail compose page (ready to send).
+const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
 const TELEGRAM_URL = 'https://t.me/yaredll';
 const WHATSAPP_URL = 'https://wa.me/251980256702';
 const CV_DOWNLOAD_URL = '/Yared%20girma.pdf';
