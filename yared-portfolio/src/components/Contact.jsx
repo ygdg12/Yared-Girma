@@ -3,8 +3,8 @@ import styles from './Contact.module.css';
 import { TelegramIcon, WhatsappIcon } from './PremiumIcons';
 
 const EMAIL = 'yaredgirma.webdev@outlook.com';
-// Gmail compose page (ready to send).
-const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
+// Outlook compose page (ready to send).
+const EMAIL_COMPOSE_URL = `https://outlook.live.com/mail/0/deeplink/compose?to=${encodeURIComponent(EMAIL)}`;
 
 export default function Contact() {
   const revealRefs = useRef([]);
@@ -20,7 +20,7 @@ export default function Contact() {
   }, []);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('yaredgirmab1234@gmail.com');
+    navigator.clipboard.writeText(EMAIL);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -54,7 +54,7 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            yaredgirmab1234<br />@gmail.com
+            yaredgirma.webdev<br />@outlook.com
           </a>
 
           <div className={styles.cardActions}>
