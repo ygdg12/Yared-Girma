@@ -3,7 +3,7 @@ import photo from '../assets/photo.png';
 import styles from './About.module.css';
 import { EducationCapIcon, LocationPinIcon, BriefcaseIcon, LightningBoltIcon, TelegramIcon, WhatsappIcon } from './PremiumIcons';
 
-const EMAIL = 'yaredgirmab1234@gmail.com';
+const EMAIL = 'yaredgirma.webdev@outlook.com';
 // Gmail compose page (ready to send).
 const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
 const TELEGRAM_URL = 'https://t.me/yaredll';

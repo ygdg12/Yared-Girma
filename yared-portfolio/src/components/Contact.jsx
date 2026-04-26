@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import styles from './Contact.module.css';
 import { TelegramIcon, WhatsappIcon } from './PremiumIcons';
 
-const EMAIL = 'yaredgirmab1234@gmail.com';
+const EMAIL = 'yaredgirma.webdev@outlook.com';
 // Gmail compose page (ready to send).
 const EMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}`;
 
